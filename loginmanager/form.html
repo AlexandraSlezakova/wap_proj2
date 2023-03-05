@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>WAP PROJECT 2</title>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/613550c522.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-8 ms-auto me-auto">
+            <h1 class="mt-5">Login manager misuse</h1>
+            <p style="font-size: 18px;" class="mt-1 mb-1 fw-bold">Demo steps:</p>
+            <ul>
+                <li>Submit the following form with fake credentials</li>
+                <li>Your browser will ask whether you want to save this login. Click "Save".</li>
+            </ul>
+
+            <form>
+                <div class="form-group mt-3 mb-3">
+                    <label for="inputEmail">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="inputPassword">Password</label>
+                    <div class="input-group flex-nowrap">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" />
+                        <span class="input-group-text" onclick="myFunction()"><i id="eye" class="fa-solid fa-eye" style="font-size:14px"></i></span>
+                    </div>
+                </div>
+                <a href="sniff.html" class="btn btn-primary" role="button">Submit</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        let x = document.getElementById('inputPassword');
+        let eye = document.getElementById('eye');
+
+        if (x.type === 'password') {
+            x.type = 'text';
+            eye.classList.remove('fa-eye');
+            eye.classList.add('fa-eye-slash')
+        } else {
+            x.type = 'password';
+            eye.classList.remove('fa-eye-slash')
+            eye.classList.add('fa-eye');
+        }
+    }
+</script>
+
+</body>
+</html>
