@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>WAP PROJECT 2</title>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/613550c522.js" crossorigin="anonymous"></script>
+
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+        let src;
+
+        (function(h,o,t,j,a,r){
+            // Object.defineProperty(h.navigator, 'doNotTrack', {
+            //     value: null,
+            //     writable: false,
+            //     configurable: true,
+            //     enumerable: true
+            // });
+
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+
+            h._hjSettings={hjid:3392703,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');
+            r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            // a by mala byt hlavicka, tam opera nedovoli append, ani send, bind
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-8 ms-auto me-auto">
+            <form>
+                <div class="form-group mt-5 mb-3">
+                    <label for="inputEmail">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="inputPassword">Password</label>
+                    <div class="input-group flex-nowrap">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" />
+                        <span class="input-group-text" onclick="myFunction()"><i id="eye" class="fa-solid fa-eye" style="font-size:14px"></i></span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        let x = document.getElementById('inputPassword');
+        let eye = document.getElementById('eye');
+
+        if (x.type === 'password') {
+            x.type = 'text';
+            eye.classList.remove('fa-eye');
+            eye.classList.add('fa-eye-slash')
+        } else {
+            x.type = 'password';
+            eye.classList.remove('fa-eye-slash')
+            eye.classList.add('fa-eye');
+        }
+    }
+</script>
+
+</body>
+</html>
