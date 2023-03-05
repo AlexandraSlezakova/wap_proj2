@@ -40,42 +40,11 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-12 col-md-8 ms-auto me-auto">
-            <form>
-                <div class="form-group mt-5 mb-3">
-                    <label for="inputEmail">Email address</label>
-                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group mb-3">
-                    <label for="inputPassword">Password</label>
-                    <div class="input-group flex-nowrap">
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" />
-                        <span class="input-group-text" onclick="myFunction()"><i id="eye" class="fa-solid fa-eye" style="font-size:14px"></i></span>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
+
     </div>
 </div>
 
-<script>
-    function myFunction() {
-        let x = document.getElementById('inputPassword');
-        let eye = document.getElementById('eye');
 
-        if (x.type === 'password') {
-            x.type = 'text';
-            eye.classList.remove('fa-eye');
-            eye.classList.add('fa-eye-slash')
-        } else {
-            x.type = 'password';
-            eye.classList.remove('fa-eye-slash')
-            eye.classList.add('fa-eye');
-        }
-    }
-</script>
 
 </body>
 </html>
