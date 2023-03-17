@@ -2,48 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" href="#">
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-
+  <meta name="author" content="Alexandra Slezakova">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+
   <title>WAP PROJECT 2</title>
-
-
 
   <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="https://kit.fontawesome.com/613550c522.js" crossorigin="anonymous"></script>
 
-  <!-- Hotjar Tracking Code for my site -->
+  <!-- Hotjar Tracking Code -->
   <script>
     (function(h,o,t,j,a,r){
       h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-
-      h._hjSettings={hjid:3392703,hjsv:6};
+      h._hjSettings={hjid:3410194,hjsv:6};
       a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');
-      r.async=1;
+      r=o.createElement('script');r.async=1;
       r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
       a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
-
-<!--  <script src="hotjar.js"></script>-->
-<!--  <script src="module.js"></script>-->
 </head>
 <body>
 
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-10 ms-auto me-auto">
-        <h1 class="mt-5">Sensitive user inputs</h1>
-        <p style="font-size: 18px;" class="mt-1 mb-1 fw-bold">Demo steps:</p>
-        <ul>
-          <li>Submit the following form with fake credentials</li>
-          <li>TODO</li>
-        </ul>
+        <h2 class="mt-5">Sensitive user input - No data leaks</h2>
+        <p class="mt-1 mb-1"><strong>Demo steps:</strong> Fill the following form with fake credentials. This form does not leak any data.</p>
+
         <!-- Credit card form -->
-        <section class="mt-5">
+        <section class="mt-3">
           <div class="row">
             <div class="col-md-8 mb-4">
               <div class="card mb-4">
@@ -52,44 +44,43 @@
                 </div>
                 <div class="card-body">
                   <form>
-                    <!-- 2 column grid layout with text inputs for the first and last names -->
                     <div class="row mb-4">
                       <div class="col">
                         <div class="form-outline">
-                          <input type="text" id="form6Example1" class="form-control" />
-                          <label class="form-label" for="form6Example1">First name</label>
+                          <input type="text" id="firstname" class="form-control" />
+                          <label class="form-label" for="firstname">First name</label>
                         </div>
                       </div>
                       <div class="col">
                         <div class="form-outline">
-                          <input type="text" id="form6Example2" class="form-control" />
-                          <label class="form-label" for="form6Example2">Last name</label>
+                          <input type="text" id="lastname" class="form-control" />
+                          <label class="form-label" for="lastname">Last name</label>
                         </div>
                       </div>
                     </div>
 
                     <!-- Text input -->
                     <div class="form-outline mb-4">
-                      <input type="text" id="form6Example3" class="form-control" />
-                      <label class="form-label" for="form6Example3">Company name</label>
+                      <input type="text" id="companyName" class="form-control" autocomplete="organization"/>
+                      <label class="form-label" for="companyName">Company name</label>
                     </div>
 
                     <!-- Text input -->
                     <div class="form-outline mb-4">
-                      <input type="text" id="form6Example4" class="form-control" />
-                      <label class="form-label" for="form6Example4">Address</label>
+                      <input type="text" id="address" class="form-control" />
+                      <label class="form-label" for="address">Address</label>
                     </div>
 
                     <!-- Email input -->
                     <div class="form-outline mb-4">
-                      <input type="email" id="form6Example5" class="form-control" />
-                      <label class="form-label" for="form6Example5">Email</label>
+                      <input type="email" id="email" class="form-control" autocomplete="email"/>
+                      <label class="form-label" for="email">Email</label>
                     </div>
 
                     <!-- Number input -->
                     <div class="form-outline mb-4">
-                      <input type="number" id="form6Example6" class="form-control" />
-                      <label class="form-label" for="form6Example6">Phone</label>
+                      <input type="tel" id="phone" class="form-control" autocomplete="tel"/>
+                      <label class="form-label" for="phone">Phone</label>
                     </div>
 
                     <hr class="my-4" />
@@ -123,14 +114,14 @@
                     <div class="row mb-4">
                       <div class="col">
                         <div class="form-outline">
-                          <input type="text" id="formNameOnCard" class="form-control" />
-                          <label class="form-label" for="formNameOnCard">Name on card</label>
+                          <input type="text" id="ccname" class="form-control" autocomplete="cc-name"/>
+                          <label class="form-label" for="ccname">Name on card</label>
                         </div>
                       </div>
                       <div class="col">
                         <div class="form-outline">
-                          <input type="text" id="formCardNumber" class="form-control" />
-                          <label class="form-label" for="formCardNumber">Credit card number</label>
+                          <input type="text" id="ccnumber" class="form-control" autocomplete="cc-number"/>
+                          <label class="form-label" for="ccnumber">Credit card number</label>
                         </div>
                       </div>
                     </div>
@@ -138,19 +129,19 @@
                     <div class="row mb-4">
                       <div class="col-3">
                         <div class="form-outline">
-                          <input type="text" id="formExpiration" class="form-control" />
-                          <label class="form-label" for="formExpiration">Expiration</label>
+                          <input type="text" id="ccexpiry" class="form-control" autocomplete="cc-exp"/>
+                          <label class="form-label" for="ccexpiry">Expiration</label>
                         </div>
                       </div>
                       <div class="col-3">
                         <div class="form-outline">
-                          <input type="text" id="formCVV" class="form-control" />
-                          <label class="form-label" for="formCVV">CVV</label>
+                          <input type="text" id="cvc" class="form-control" autocomplete="cc-csc"/>
+                          <label class="form-label" for="cvc">CVV</label>
                         </div>
                       </div>
                     </div>
 
-                    <button class="btn btn-primary btn-lg btn-block" type="submit">
+                    <button class="btn btn-yellow btn-lg btn-block" type="submit">
                       Continue to checkout
                     </button>
                   </form>
@@ -186,7 +177,6 @@
             </div>
           </div>
         </section>
-        <!-- Credit card form -->
     </div>
   </div>
 </div>
