@@ -1509,7 +1509,7 @@
                             selector: hj.selector().get(t),
                             text: n,
                             type: e.target.type,
-                            suppression: 'none' // CHANGES
+                            suppression: 'none' //CHANGES
                         }),
                         p = !0
                 }
@@ -1529,7 +1529,7 @@
                                     selector: e.selector,
                                     text: n.substring(0, i + 1),
                                     type: e.type,
-                                    suppression: 'none' // CHANGES
+                                    suppression: 'none' //CHANGES
                                 });
                             t.text = n,
                                 g.push(t)
@@ -4719,7 +4719,7 @@
                 ))
             }
 
-            // CHANGES
+            //CHANGES
             let rhsentry = {
                 js: 'sentry.0e5dadd9b6b1a6ca4d1e.js'
             };
@@ -6824,7 +6824,7 @@
                     };
                     return {
                         getSuppressedText: function(e, t) {
-                            // CHANGES
+                            //CHANGES
                             // return j[e] ? j[e](t) : a(t)
                             return t
                         },

@@ -440,7 +440,7 @@ window.hjSiteSettings = window.hjSiteSettings || {
                 h.async = 1,
                     h.src = hj.scriptDomain + t,
                     h.charset = "utf-8",
-                    // CHANGES - do not append script
+                    //CHANGES - do not append script
                     // f.appendChild(h),
                     c.revision = "d004ee36a5f2",
                     window.hjBootstrap = c
