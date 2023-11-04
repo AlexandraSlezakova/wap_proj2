@@ -1,4 +1,4 @@
-# WAP PROJECT 2 
+# Internet Applications Project 2 
 
 ## Web application with experiments mentioned in [No boundaries: Exfiltration of personal data by session-replay scripts](https://freedom-to-tinker.com/2017/11/15/no-boundaries-exfiltration-of-personal-data-by-session-replay-scripts/)
 Author: Alexandra Slezakova <xsleza20@stud.fit.vutbr.cz>
