@@ -15,3 +15,5 @@ Session recordings are available on HotJar website. A new account with a Free pl
 **email address:** wap.project2@gmail.com <br/>
 **password:** Wap-project2*
 
+## Publication
+[Data Exfiltration by Hotjar Revisited, Libor Polčák, Alexandra Slezáková, 2023](https://arxiv.org/pdf/2309.11253v1.pdf)
